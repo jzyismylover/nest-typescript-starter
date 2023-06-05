@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_USERNAME=root
+      - MYSQL_PASSWORD=sql
+      - MYSQL_DBNAME=nest
+      - MYSQL_HOSTNAME=localhost
+      - MYSQL_PORT=5506
+    ports:
+      - 5506:3306
+    volumes:
+      - 
